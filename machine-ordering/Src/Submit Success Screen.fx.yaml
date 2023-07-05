@@ -70,7 +70,8 @@
         Price_DataCard4 As typedDataCard.USCurrencyViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="contoso_price"
-            Default: =ThisItem.Price
+            Default: |-
+                =Text(ThisItem.Price, "$##,###.00")
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Machine Orders'],DataSourceInfo.DisplayName,"contoso_price")
             Fill: =RGBA(0, 0, 0, 0)

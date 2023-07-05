@@ -6,16 +6,21 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "contoso_machineorder",
+    "MaxGetRowsCount": 500,
     "Name": "Machine Orders",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "bpf_contoso_machineorder_contoso_machineprocurementprocess": "Machine Procurement Process",
       "contoso_approvalstatus": "Approval Status",
       "contoso_approveddate": "Approved Date",
       "contoso_approver": "Approver",
+      "contoso_capitalapproved": "Capital Approved",
       "contoso_comments": "Comments",
       "contoso_departmentcontribution": "Department Contribution",
       "contoso_departmentcontribution_base": "Department Contribution (Base)",
       "contoso_estimatedshipdate": "Estimated Ship Date",
+      "contoso_machineconfigured": "Machine Configured",
+      "contoso_machinedelivered": "Machine Delivered",
       "contoso_machinename": "Machine Name",
       "contoso_machineorder_AsyncOperations": "System Jobs",
       "contoso_machineorder_BulkDeleteFailures": "Bulk Delete Failures",
@@ -26,10 +31,13 @@
       "contoso_machineorder_ProcessSession": "Process Sessions",
       "contoso_machineorder_SyncErrors": "Sync Errors",
       "contoso_machineorderid": "Machine Order",
+      "contoso_machinereceived": "Machine Received",
       "contoso_price": "Price",
       "contoso_price_base": "Price (Base)",
       "contoso_requestdate": "Request Date",
       "contoso_requestedby": "Requested By",
+      "contoso_sendsurvey": "Send Survey",
+      "contoso_supplierorderid": "Supplier Order ID",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -42,10 +50,13 @@
       "owningbusinessunit": "Owning Business Unit",
       "owningteam": "Owning Team",
       "owninguser": "Owning User",
+      "processid": "Process Id",
+      "stageid": "(Deprecated) Stage Id",
       "statecode": "Status",
       "statuscode": "Status Reason",
       "timezoneruleversionnumber": "Time Zone Rule Version Number",
       "transactioncurrencyid": "Currency",
+      "traversedpath": "(Deprecated) Traversed Path",
       "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
       "versionnumber": "Version Number"
     },
@@ -83,6 +94,106 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "contoso_approvalstatus",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Capital Approved (Machine Orders)",
+    "Name": "contoso_machineorder_contoso_capitalapproved",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contoso_capitalapproved",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "contoso_capitalapproved",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Machine Configured (Machine Orders)",
+    "Name": "contoso_machineorder_contoso_machineconfigured",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contoso_machineconfigured",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "contoso_machineconfigured",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Machine Delivered (Machine Orders)",
+    "Name": "contoso_machineorder_contoso_machinedelivered",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contoso_machinedelivered",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "contoso_machinedelivered",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Machine Received (Machine Orders)",
+    "Name": "contoso_machineorder_contoso_machinereceived",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contoso_machinereceived",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "contoso_machinereceived",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Send Survey (Machine Orders)",
+    "Name": "contoso_machineorder_contoso_sendsurvey",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contoso_sendsurvey",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "contoso_sendsurvey",
     "RelatedEntityName": "Machine Orders",
     "Type": "OptionSetInfo"
   },
