@@ -1,0 +1,129 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "contoso_machineorders",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "contoso_machineorder",
+    "Name": "Machine Orders",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "contoso_approvalstatus": "Approval Status",
+      "contoso_approveddate": "Approved Date",
+      "contoso_approver": "Approver",
+      "contoso_comments": "Comments",
+      "contoso_departmentcontribution": "Department Contribution",
+      "contoso_departmentcontribution_base": "Department Contribution (Base)",
+      "contoso_estimatedshipdate": "Estimated Ship Date",
+      "contoso_machinename": "Machine Name",
+      "contoso_machineorder_AsyncOperations": "System Jobs",
+      "contoso_machineorder_BulkDeleteFailures": "Bulk Delete Failures",
+      "contoso_machineorder_DuplicateBaseRecord": "Duplicate Records (contoso_machineorder_DuplicateBaseRecord)",
+      "contoso_machineorder_DuplicateMatchingRecord": "Duplicate Records (contoso_machineorder_DuplicateMatchingRecord)",
+      "contoso_machineorder_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "contoso_machineorder_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "contoso_machineorder_ProcessSession": "Process Sessions",
+      "contoso_machineorder_SyncErrors": "Sync Errors",
+      "contoso_machineorderid": "Machine Order",
+      "contoso_price": "Price",
+      "contoso_price_base": "Price (Base)",
+      "contoso_requestdate": "Request Date",
+      "contoso_requestedby": "Requested By",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Machine Orders",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Machine Orders (Views)",
+    "Name": "_contoso_machineorder_views",
+    "RelatedEntityName": "Machine Orders",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2c21bff8-9e8d-4fae-b62e-6eb275df8292": "Active Machine Orders",
+      "3a098170-ff65-49d4-9047-d8ba719993ed": "Machine Order Advanced Find View",
+      "3d14f0f2-9114-4a2c-9cce-4b015b6e2121": "Machine Order Lookup View",
+      "7db56d82-ac57-4cdd-8ff6-c43f4dcb09d6": "Inactive Machine Orders",
+      "8cd534d4-ceee-43cd-9b69-928857d6b6fd": "Machine Order Associated View"
+    }
+  },
+  {
+    "DisplayName": "Approval Status (Machine Orders)",
+    "Name": "contoso_machineorder_contoso_approvalstatus",
+    "OptionSetInfoNameMapping": {
+      "330650000": "Approve",
+      "330650001": "Reject"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contoso_approvalstatus",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "contoso_approvalstatus",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Machine Orders)",
+    "Name": "contoso_machineorder_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Machine Orders)",
+    "Name": "contoso_machineorder_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Machine Orders"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Machine Orders",
+    "Type": "OptionSetInfo"
+  }
+]

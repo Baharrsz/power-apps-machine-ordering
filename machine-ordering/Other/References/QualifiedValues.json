@@ -1,0 +1,11 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_contoso_machineorder_forms",
+      "Namespace": "Machine Orders (Forms)",
+      "Values": {
+        "Information": "6b58aaf4-7c8c-4841-b94c-c54d0a73cf13"
+      }
+    }
+  ]
+}
